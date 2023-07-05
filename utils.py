@@ -8,7 +8,6 @@ warnings.filterwarnings('ignore')
 
 class MedicalInsurence():
     def __init__(self, age,gender,bmi,children,smoker,region):
-        print("****** INIT Function *********")
         self.age = age
         self.gender = gender
         self.bmi = bmi
