@@ -43,4 +43,6 @@ class MedicalInsurence():
         predicted_charges = np.around(self.model.predict(test_array)[0],3)
         return predicted_charges
 
-
+obj =   MedicalInsurence(15,'female',15,2,'yes','nothwest')
+if __name__ == "__main__":
+    obj.get_predicted_price()
