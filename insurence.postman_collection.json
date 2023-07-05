@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "ec9837fc-437b-4d10-8390-a40dab1fe6bf",
+		"name": "medical_insurence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28197961"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5004/medical_insurence/predict_charges",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "bmi",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "children",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "smoker",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "northeast",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5004/medical_insurence/predict_charges",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5004",
+					"path": [
+						"medical_insurence",
+						"predict_charges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5004/test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5004/test",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5004",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
