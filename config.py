@@ -1,9 +1,10 @@
 import os
 
 
-PORT_NUMBER = 5004
+PORT_NUMBER = 8080
 
 
-MODEL_FILE_PATH =  os.getcwd() +  r'\static\models\medical_ins_linear_regression.pkl'
+MODEL_FILE_PATH =  os.path.join( r'artifacts','medical_ins_linear_regression.pkl')
 
-JSON_FILE_PATH =   os.getcwd() +  r'\static\json_files\proj_data1.json'
+JSON_FILE_PATH =   os.path.join( r'artifacts','proj_data1.json')
+
