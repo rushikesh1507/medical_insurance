@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify, render_template, redirect, url_for
 from utils import MedicalInsurence
 import config
 import traceback
+
 app = Flask(__name__)
 
-@app.route('/medical_insurence')
+@app.route('/')
 def home1():
     
     return render_template('medical_insurence.html')
